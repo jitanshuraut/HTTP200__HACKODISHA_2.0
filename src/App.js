@@ -6,6 +6,7 @@ import News from './pages/News';
 import Links from './pages/Links';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Data from './pages/Data';
 function App() {
   return (
     <>
@@ -16,10 +17,10 @@ function App() {
         <img src="help.png" alt="Logo" className={style.logo}/>
         <div className={style.navMenu}>
             <ul>
-                <li><p href="#" className={style.menu}>Home</p></li>
-                <li><p href="#" className={style.menu}>News</p></li>
-                <li><p href="#" className={style.menu}>Home</p></li>
-                <li><p href="#" className={style.menu}>Links</p></li>
+                <li><Link to="/" className={style.menu}>Home</Link></li>
+                <li><Link to="/news" className={style.menu}>News</Link></li>
+                <li><Link to="/link" className={style.menu}>Links</Link></li>
+
             </ul>
         </div>
     </nav>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/news" element={<News/>}/>
 
           <Route path="/link" element={<Links/>} />
+          <Route path="/info" element={<Data/>} />
           
           
          

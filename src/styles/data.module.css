@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
 }
 
 nav {
@@ -37,13 +37,15 @@ li {
     justify-content: space-evenly;
     align-items: center;
 }
-.formImg{
+
+.formImg {
     width: 50%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .takeInput {
     display: flex;
     align-items: center;
@@ -52,7 +54,8 @@ li {
     width: 450px;
     padding: 10px;
 }
-#img50{
+
+#img50 {
     width: 70%;
 }
 
@@ -105,36 +108,41 @@ input:focus {
     }
 }
 
-@media only screen and (max-width: 700px){
-    .formImg{
+@media only screen and (max-width: 700px) {
+    .formImg {
         /* display: none; */
         width: 90%;
     }
-    #img50{
+
+    #img50 {
         width: 80%;
     }
-    .firstSection{
+
+    .firstSection {
         flex-direction: column;
     }
-    .takeInput{
+
+    .takeInput {
         width: 90%;
     }
-    .btn5{
-        
+
+    .btn5 {
+
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 30px 0 40px;
-        
+
     }
-    .button-43{
+
+    .button-43 {
         display: flex;
         justify-content: center;
         padding: 10;
         margin: 0;
         align-items: center;
     }
-    
+
 }
 
 
@@ -170,10 +178,12 @@ input:focus {
     display: flex;
     margin: 0px 25px;
 }
-.img1{
+
+.img1 {
     object-fit: cover;
 
 }
+
 .heading {
     margin: 0 25px;
     font-weight: 600;
@@ -205,7 +215,8 @@ input:focus {
     width: 50%;
     /* padding-left: 50px; */
 }
-.dont{
+
+.dont {
     width: 50%;
 }
 
@@ -238,6 +249,15 @@ input:focus {
     padding: 50px 100px;
 }
 
+.tips {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
 
 
 
@@ -246,146 +266,85 @@ input:focus {
         display: block;
         /* flex-direction: column; */
     }
+
     .info {
         flex-direction: column-reverse;
     }
+
     nav {
         width: 100%;
     }
-    .image5 {
-        width: 100px;
-    }
+
     .imgContainer {
-        width: 250px;
+        width: 300px;
         margin: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
+
     .navMenu {
         display: none;
     }
+
     .img1 {
         height: 300px;
         object-fit: cover;
     }
+
     .text {
         top: 28%;
         left: 25%;
     }
+
     .details {
         padding: 0;
         margin: 0;
     }
-    .image5{
+
+    .image5 {
         /* height: 300px; */
         width: 280px;
     }
-    .info{
+
+    .info {
         margin: 20px 15px;
     }
-    .heading{
+
+    .heading {
         padding-bottom: 0;
     }
-    .container{
+
+    .container {
         padding: 15px;
     }
-    .point{
+
+    .point {
         padding: 5px;
     }
-    .text6{
+
+    .text6 {
         padding: 5px;
     }
-    .icon6{
+
+    .icon6 {
         width: 35px;
     }
-    .logo{
+
+    .logo {
         width: 80px;
     }
+
     .do {
         width: auto;
     }
-    .dont{
+
+    .dont {
         width: auto;
     }
+    .tips{
+        margin: 20px;
+    }
 }
-
-
-.ver_slid{
-    display: flex;
-      justify-content: space-between;
-    align-content: flex-start;
-   
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
-  }
-  .ver_1_slid{
-    display: flex;
-    flex-direction: column;
-  width: 80%;
-  
-  }
-  .ver_slid_img{
-    width: 200px;
-  }
-  .ver_slid_h1{
-    font-size: 25px;
-    text-align: start;
-    
-  }
-  .ver_slid_h3{
-    font-size: 15px;
-    text-align: start;
-    margin: auto;
-    margin-left: 0px;
-    margin-bottom: 10px;
-  }
-  .ver_slid_p{
-    font-size: 15px;
-    text-align: start;
-    margin: auto;
-    margin-left: 0px;
-    margin-bottom: 10px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-  .ver_slid_p{
-   font-size: 10px;
-  }
-  .ver_slid_h1{
-    font-size: 10px;
-  }
-  .ver_slid_h3{
-    font-size: 10px;
-  }
-  .ver_slid_img{
-    width: 100px;
-  }
-  }
-
-  .news_head{
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    color: black;
-    font-size: 30px;
-  }
-
-  .read_more{
-    text-align: center;
-    background-color: #93b9f2;
-    padding: 10px;
-    width: 30%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .ext_link{
-    display: flex;
-    justify-content: center;
-  }

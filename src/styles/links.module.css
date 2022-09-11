@@ -1,0 +1,9 @@
+.main_link{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h3{
+    text-align: start;
+}

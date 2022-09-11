@@ -1,59 +1,65 @@
-.extra{
+.extra {
   display: flex;
 }
-.button_icon{
-    appearance: button;
-    background-color: #000;
-    background-image: none;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 4px;
-   
-    color: #fff;
-    cursor: pointer;
-   
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 10px;
-    margin:10px;
-    overflow: visible;
-    padding: 10px 40px;
-    text-align: center;
-   
+
+.button_icon {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 10px;
+  margin: 10px;
+  overflow: visible;
+  padding: 10px 40px;
+  text-align: center;
+
+}
+
+.button_icon:focus {
+  text-decoration: none;
+}
+
+.res_link {
+  color: white;
+  text-decoration: none;
+}
+
+.res_link:visited {
+  color: #fff;
+}
+
+.button_icon:hover {
+  text-decoration: none;
+}
+
+.button_icon:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button_icon:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button_icon {
+    padding: 10px 10px;
   }
-  
-  .button_icon:focus {
-    text-decoration: none;
-  }
-  .res_link{
-    color: white;
-    text-decoration: none;
-  }
-  .res_link:visited{
-    color: #fff;
-  }
-  
-  .button_icon:hover {
-    text-decoration: none;
-  }
-  
-  .button_icon:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .button_icon:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .button_icon {
-      padding: 10px 10px;
-    }
-  }
-  .footer{
-    display: flex;
-    justify-content: space-evenly;
-   background-color: #93b9f2;
-align-items: center;
-  }
+
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #93b9f2;
+  align-items: center;
+}

@@ -2,9 +2,12 @@ import React,{useEffect, useState} from 'react'
 import Footer from '../components/Footer'
 import List from '../components/List'
 import style from "../styles/home.module.css"
+import {Link, useNavigate} from 'react-router-dom';
+
 function Home() {
     const [counter, setcounter] = useState([])
     const [s_counter, sets_counter] = useState(0)
+ 
     let extra= [
                 {
                     "source": {
@@ -437,8 +440,9 @@ function Home() {
           )
         })
       }
-
-<div className={style.read_more}>read more</div>
+<div className={style.ext_link}>
+<Link to="/news" className={style.read_more}>read more</Link>
+</div>
 <Footer/>
     </>
   )
