@@ -1,4 +1,5 @@
 import React from 'react'
+import List from '../components/List'
 import style from "../styles/home.module.css"
 function Home() {
   return (
@@ -35,60 +36,8 @@ function Home() {
         <div className={style.formImg}><img src="final.jpg" alt="image" id={style.img50} /></div>
     </div>
 
+<List/>
 
-<div className={style.list_box_extra}>
-
-    <div className={style.list}>
-
-        <div className={style.box}>
-          <img src="flood-scaled.jpg" className={style.list_box} alt="" />
-
-          <div className={style.col}>
-            <h3>flood</h3>
-
-
-          </div>
-        </div>
-        <div className={style.box}>
-          <img src="fire.jpg" className={style.list_box} alt="" />
-
-          <div className={style.col}>
-            <h3>fire</h3>
-
-
-          </div>
-        </div>
-        <div className={style.box}>
-          <img src="earthquake.jpg" className={style.list_box} alt="" />
-
-          <div className={style.col}>
-            <h3>earthquake</h3>
-
-
-          </div>
-        </div>
-        <div className={style.box}>
-          <img src="tsunami.jpg" className={style.list_box} alt="" />
-
-          <div className={style.col}>
-            <h3>tsunami</h3>
-
-
-          </div>
-        </div>
-
-        <div className={style.box}>
-          <img src="tornado.jpg" className={style.list_box} alt="" />
-
-          <div className={style.col}>
-            <h3>tornado</h3>
-
-
-          </div>
-        </div>
-
-      </div>
-      </div>
     </>
   )
 }
